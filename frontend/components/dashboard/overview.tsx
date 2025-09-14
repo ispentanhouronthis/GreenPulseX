@@ -47,17 +47,21 @@ export function DashboardOverview() {
       <h2 className="text-xl font-semibold text-dark-text mb-6">Farm Overview</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {stats.map((stat, index) => (
+        {stats.map((stat) => (
           <div key={stat.title} className="stat-card">
             <div className="flex items-center justify-between mb-4">
               <div className={`w-12 h-12 ${stat.bgColor} rounded-lg flex items-center justify-center`}>
                 <stat.icon className={`h-6 w-6 ${stat.color}`} />
               </div>
-              <div className={`text-sm font-medium ${
-                stat.changeType === 'positive' ? 'text-green-600' :
-                stat.changeType === 'negative' ? 'text-red-600' :
-                'text-gray-600'
-              }`}>
+              <div
+                className={`text-sm font-medium ${
+                  stat.changeType === 'positive'
+                    ? 'text-green-600'
+                    : stat.changeType === 'neutral'
+                    ? 'text-gray-600'
+                    : 'text-red-600'
+                }`}
+              >
                 {stat.change}
               </div>
             </div>
