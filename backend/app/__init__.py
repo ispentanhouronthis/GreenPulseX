@@ -1,0 +1,1 @@
+# GreenPulseX Backend Application
