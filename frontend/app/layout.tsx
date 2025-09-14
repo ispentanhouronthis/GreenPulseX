@@ -64,12 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#0B6B3A" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
+    
       <body className={inter.className}>
         <Providers>
           {children}
@@ -102,3 +97,4 @@ export default function RootLayout({
     </html>
   )
 }
+
