@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.leaflet-container {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prediction-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.recommendation-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.soil-card {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.gauge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.district-selector {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.feature-importance {
+  margin: 20px 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.error {
+  color: #d32f2f;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.success {
+  color: #2e7d32;
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .leaflet-container {
+    height: 300px;
+  }
+  
+  .prediction-card,
+  .recommendation-card,
+  .weather-card,
+  .soil-card {
+    padding: 15px;
+    margin: 5px 0;
+  }
+}

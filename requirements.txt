@@ -1,0 +1,36 @@
+# Core Backend Dependencies
+Flask==2.3.3
+Flask-CORS==4.0.0
+Flask-RESTful==0.3.10
+pandas==2.1.1
+numpy==1.26.4
+scikit-learn==1.5.0
+tensorflow==2.16.1
+geopandas==0.14.3
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Database
+pymongo==4.5.0
+motor==3.2.0
+
+# Data Processing
+rasterio==1.3.10
+netCDF4==1.6.5
+xarray==2023.7.0
+earthengine-api==0.1.350
+
+# ML and Analysis
+xgboost==1.7.6
+shap==0.45.0
+matplotlib==3.8.4
+seaborn==0.12.2
+plotly==5.16.1
+
+# API and Web
+gunicorn==21.2.0
+python-dotenv==1.0.0
+
+# Development
+jupyter==1.0.0
+pytest==7.4.2
